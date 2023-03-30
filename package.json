@@ -15,6 +15,11 @@
     "prepare": "husky install",
     "test": "jest"
   },
+  "lint-staged": {
+    "*.{js,ts,vue}": "eslint --cache",
+    "*.{css,scss,sass,html,vue}": "stylelint",
+    "*.**": "prettier --check --ignore-unknown"
+  },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
     "core-js": "^3.25.3",
